@@ -11,17 +11,17 @@ function App() {
     {
       title: "Vinfast Turbo 2.0",
       amount: 194.67,
-      date: new Date(2022, 12, 28)
+      date: new Date(2022, 12, 3)
     },
     {
       title: "Lexus LX570",
       amount: 888.22,
-      date: new Date(2021, 8, 28)
+      date: new Date(2022, 8, 25)
     },
     {
       title: "Mec MayBach",
       amount: 777.67,
-      date: new Date(2021, 2, 18)
+      date: new Date(2021, 2, 11)
     }
   ]
 

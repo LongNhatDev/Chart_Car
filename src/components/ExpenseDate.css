@@ -6,7 +6,6 @@
 .expense-date{
     color: white;
     background-color: rgb(31, 26, 26);
-    font-size: 25px;
     display:flex;
     flex-flow: column wrap; 
     justify-content:center;
@@ -15,6 +14,15 @@
     line-height:30px !important;
     width:150px;
     height:150px;
-    /* margin: 20px; */
     border-radius: 15px;
+}
+.size1{
+    font-size: 20px;
+}
+.size2{
+    font-size: 15px;
+}
+.size3{
+    font-size: 40px;
+    
 }
