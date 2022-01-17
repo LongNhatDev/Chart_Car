@@ -6,7 +6,7 @@ function App() {
     {
       title: "Cadilac Luxury",
       amount: 294.67,
-      date: new Date(2021, 7, 18)
+      date: new Date(2021, 7, 18)     
     },
     {
       title: "Vinfast Turbo 2.0",
