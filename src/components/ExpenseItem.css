@@ -28,6 +28,20 @@
     justify-content:space-between;
     padding-right: 20px;
 }
+@media only screen and (max-width: 750px) {
+    .expense-item{
+        flex-flow: column wrap;
+    }
+    .expense-DateMonthYear{
+        flex: 1;
+    }
+    .expense-item__description{
+        flex: 1;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+}
 .expense-item__price{
     background-color: rgb(28, 28, 131);
     min-width:150px;
