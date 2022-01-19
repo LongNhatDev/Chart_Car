@@ -11,9 +11,9 @@
     justify-content:center;
     font-weight: bolder;
     border: 2px solid white;
-    line-height:30px !important;
-    width:150px;
-    height:150px;
+    line-height:25px !important;
+    width:120px;
+    height:120px;
     border-radius: 15px;
 }
 .size1{

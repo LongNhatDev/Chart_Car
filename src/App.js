@@ -1,8 +1,10 @@
-import './App.css';
 import Card from "./components/UI/Card"
+import NewExpense from "./components/NewExpense/NewExpense";
 import ExpenseItem from './components/Expense/ExpenseItem';
 
-function App() {
+import './App.css';
+
+const App = () => {
   const expenses = [
     {
       title: "Cadilac Luxury",
@@ -26,8 +28,15 @@ function App() {
     }
   ]
 
+  const addExpenseHandler = expense => {
+    console.log("In app JS !");
+    console.log(expense)
+  }
+
   return (
     <Card className="App">
+      <NewExpense onAddExpense={addExpenseHandler}/>
+
       <ExpenseItem
         title={expenses[0].title}
         amount={expenses[0].amount}
@@ -50,6 +59,7 @@ function App() {
       />
     </Card>
   );
+
 }
 
 export default App;

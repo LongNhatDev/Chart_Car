@@ -1,0 +1,12 @@
+*{
+    box-sizing: border-box;
+    padding : 0;
+    margin : 0;
+}
+
+.new-expense{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

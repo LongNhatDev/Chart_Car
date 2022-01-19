@@ -4,8 +4,8 @@
     padding: 0;
 }
 .expense-item{
-    width: 100%;
-    line-height:120px;
+    width: 900px;
+    line-height:60px;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -22,7 +22,7 @@
     flex: 6;
     color:white;
     display:flex;
-    font-size: 25px;
+    font-size: 20px;
     align-items: center;
     flex-flow: row wrap;
     justify-content:space-between;
