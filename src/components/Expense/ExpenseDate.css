@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.expense-date{
+    color: white;
+    background-color: rgb(31, 26, 26);
+    display:flex;
+    flex-flow: column wrap; 
+    justify-content:center;
+    font-weight: bolder;
+    border: 2px solid white;
+    line-height:25px !important;
+    width:120px;
+    height:120px;
+    border-radius: 15px;
+}
+
+.size1{
+    font-size: 20px;
+}
+.size2{
+    font-size: 15px;
+}
+.size3{
+    font-size: 40px;
+    
+}

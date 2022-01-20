@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.expense-item{
+    width: 900px;
+    line-height:60px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-flow: row wrap;
+    background-color:#434a57;
+    border-radius:25px;
+    margin-bottom: 20px;
+}
+.expense-DateMonthYear{
+    flex: 1;
+    padding: 20px 10px;
+}
+.expense-item__description{
+    flex: 6;
+    color:white;
+    display:flex;
+    font-size: 20px;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content:space-between;
+    padding-right: 20px;
+}
+@media only screen and (max-width:1000px) {
+    .expense-item{
+        width:100%;
+    }
+}
+@media only screen and (max-width:600px) {
+    .expense-item{
+        flex-flow: column wrap;
+    }
+    .expense-DateMonthYear{
+        flex: 1;
+    }
+    .expense-item__description{
+        flex: 1;
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+    }
+}
+.expense-item__price{
+    background-color: rgb(28, 28, 131);
+    min-width:150px;
+    border: 1.5px solid white;
+    border-radius: 10px;
+    font-size: 30px;
+    font-weight:bold;
+    line-height:55px
+}

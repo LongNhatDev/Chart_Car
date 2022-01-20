@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    padding : 0;
+    margin : 0;
+}
+input{
+    width: 350px;
+    line-height:35px;
+    border-radius: 10px;
+    padding-left: 20px;
+    font-size:20px;
+}
+.new-expense__controls{
+    width: 900px;
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(159, 159, 219);
+    margin-bottom: 20px;
+    border-radius: 25px;
+    padding: 15px;
+}
+.new-expense__control{
+display: flex;
+margin:10px;
+flex-flow: column wrap;
+}
+.new-expense__control label{
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    margin:5px;
+}
+.new-expense__ections{
+    width:100%;
+    display: flex;
+    justify-content: right;
+    padding-right: 50px;
+
+}
+@media only screen and (max-width:1000px) {
+    .new-expense__controls{
+        width:100%;
+    }
+}
+.new-expense__ections button{
+line-height: 50px;
+width: 150px  ;
+border-radius: 10px;
+font-size:20px;
+font-weight: bold;
+color: white;
+background-color:rgb(28, 28, 131);
+}

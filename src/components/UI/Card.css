@@ -1,0 +1,6 @@
+.Card{
+    display:flex;
+    flex-flow: column wrap;
+    align-items:center;
+    padding:20px 20px;
+}
