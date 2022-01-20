@@ -37,6 +37,11 @@ flex-flow: column wrap;
     padding-right: 50px;
 
 }
+@media only screen and (max-width:1000px) {
+    .new-expense__controls{
+        width:100%;
+    }
+}
 .new-expense__ections button{
 line-height: 50px;
 width: 150px  ;

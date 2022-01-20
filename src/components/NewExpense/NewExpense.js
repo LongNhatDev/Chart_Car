@@ -8,7 +8,7 @@ const NewExpense = (props) => {
         const expenseData ={
             ...enteredNewExpenseData,
         }
-        props.onAddExpense(saveNewExpenseData);
+        props.onAddExpense(expenseData);
     }
     return (
         <div className="new-expense">

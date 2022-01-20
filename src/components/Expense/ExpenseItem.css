@@ -28,9 +28,15 @@
     justify-content:space-between;
     padding-right: 20px;
 }
+@media only screen and (max-width:1000px) {
+    .expense-item{
+        width:100%;
+    }
+}
 @media only screen and (max-width: 750px) {
     .expense-item{
         flex-flow: column wrap;
+        
     }
     .expense-DateMonthYear{
         flex: 1;
