@@ -33,10 +33,9 @@
         width:100%;
     }
 }
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width:600px) {
     .expense-item{
         flex-flow: column wrap;
-        
     }
     .expense-DateMonthYear{
         flex: 1;
