@@ -1,9 +1,8 @@
 import './App.css';
 
 import React, { useState } from 'react';
-
-import NewExpense from './components/NewExpense/NewExpense';
 import Expense from './components/Expense/Expense';
+import NewExpense from './components/NewExpense/NewExpense';
 
 const DUMMY_EXPENSES = [
   {
@@ -44,20 +43,9 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p> Tran Long Nhat</p>
-        <p> Branch Master</p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+       <NewExpense onAddExpense={addExpenseHandler} />
+        <Expense item={expenses}/>
     </div>
   );
 }
