@@ -22,10 +22,10 @@ const ExpenseForm = (props) => {
     const submitHandler = (event) => {
         event.preventDefault();
         const expenseData = {
-            id:  Math.floor(Math.random() * 1),
-            title : enteredTitle,
-            amount : enteredAmount,
-            date : new Date(enteredDate)
+            id: Math.floor(Math.random() * 1),
+            title: enteredTitle,
+            amount: enteredAmount,
+            date: new Date(enteredDate)
         }
         props.onSaveNewExpenseData(expenseData);
         setEnteredAmount("")
@@ -39,31 +39,32 @@ const ExpenseForm = (props) => {
                 <div className="new-expense__control">
                     <label>Title</label>
                     <input type="text"
-                    value={enteredTitle}
-                    onChange={titleChangeHandler}></input>
+                        value={enteredTitle}
+                        onChange={titleChangeHandler}></input>
                 </div>
                 <div className="new-expense__control">
                     <label >Amount</label>
-                    <input type="number" 
-                    min="0.01" 
-                    step="0.01"
-                    onChange={amountChangeHandler}
-                    value={enteredAmount}
+                    <input type="number"
+                        min="0.01"
+                        step="0.01"
+                        onChange={amountChangeHandler}
+                        value={enteredAmount}
                     ></input>
                 </div>
                 <div className="new-expense__control">
                     <label>Date</label>
-                    <input type="date" 
-                    min="2021-01-01" 
-                    max="2022-01-20" 
-                    onChange={dateChangeHandler}
-                    value={enteredDate}
+                    <input type="date"
+                        min="2021-01-01"
+                        max="2022-01-20"
+                        onChange={dateChangeHandler}
+                        value={enteredDate}
                     ></input>
                 </div>
-                <div class="new-expense__ections">
-                    <button type="submit">Add Expense</button>
-                </div>
+                <div className="new-expense__actions">
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Add New Expense</button>
 
+                </div>
             </div>
         </form>
     )
