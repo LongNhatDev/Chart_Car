@@ -11,5 +11,7 @@
             "url": "http://localhost:8080",
             "webRoot": "${workspaceFolder}"
         }
-    ]
+    ],
+    "git.enabled": true,
+    "git.path":"C:\\Program Files\\Git\\bin\\git.exe",
 }
