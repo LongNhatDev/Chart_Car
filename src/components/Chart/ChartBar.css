@@ -1,0 +1,19 @@
+.chart-bar{
+    display: flex;
+    flex-flow: column wrap;
+}
+.chart-bar__inner{
+   background-color:white;
+   width:100%;
+   min-width:30px;
+   height:150px;
+   margin-bottom: 10px;
+}
+.chart-bar__fill{
+    background-color: darkgreen;   
+}
+.chart-bar__label{
+    display: flex;
+    flex-direction: row;
+   
+}

@@ -1,0 +1,10 @@
+.chart{
+background-color: rgb(159, 159, 219);
+width: 900px;
+margin-bottom: 20px;
+border-radius: 15px;
+display: flex;
+flex-flow: row wrap;
+justify-content:space-evenly;
+padding: 20px 0;
+}

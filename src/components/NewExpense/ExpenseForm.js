@@ -1,6 +1,16 @@
 import React, { useState } from "react"
+import styled from "styled-components"
+
 
 import "./ExpenseForm.css"
+
+const Button = styled.button`
+    border: 1px solid black;
+    &:focus
+    {
+
+    }
+`;
 const ExpenseForm = (props) => {
 
     const [enteredTitle, setEnteredTitle] = useState("")
@@ -27,18 +37,23 @@ const ExpenseForm = (props) => {
             amount: enteredAmount,
             date: new Date(enteredDate)
         }
+        if (expenseData.title.trim().length === 0) return;
+        if (expenseData.amount.trim().length === 0) return;
+        if (expenseData.date.trim().length === 0) return;
+    
         props.onSaveNewExpenseData(expenseData);
         setEnteredAmount("")
         setEnteredDate("");
         setEnteredTitle("")
     }
-
+   
     return (
         <form onSubmit={submitHandler}>
             <div className="new-expense__controls">
-                <div className="new-expense__control">
+                <div className={`new-expense__control ${0 ? "invalid" : ""}`}>
                     <label>Title</label>
-                    <input type="text"
+                    <input
+                        type="text"
                         value={enteredTitle}
                         onChange={titleChangeHandler}></input>
                 </div>

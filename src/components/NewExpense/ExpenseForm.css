@@ -24,6 +24,13 @@ display: flex;
 margin:10px;
 flex-flow: column wrap;
 }
+
+.invalid input{
+    background-color: rgb(233, 164, 164);
+}
+.invalid label{
+   color:red;
+}
 .new-expense__control label{
     font-weight: bold;
     text-align: left;
